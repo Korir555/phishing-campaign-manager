@@ -1,4 +1,4 @@
-# 🎯 Phishing Campaign Manager
+#  Phishing Campaign Manager
 
 **Attack & Defense Simulation with Machine Learning Detection**
 
@@ -8,19 +8,19 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2-blue)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## 📋 Overview
+##  Overview
 
 A full-stack cybersecurity application that simulates phishing campaigns from both attack and defense perspectives. Create realistic phishing emails, send to targets, and watch as an ML detector analyzes each email in real-time with 15 engineered features.
 
 **Key Features:**
-- 🎯 Create phishing campaigns with custom content
-- 📧 Send campaigns to email lists (simulated)
-- 🛡️ ML detector analyzes each email automatically
-- 📊 Real-time dashboards with metrics
-- 📈 Confidence scores and detection reasons
-- ⏱️ Timeline visualization of campaign events
+-  Create phishing campaigns with custom content
+-  Send campaigns to email lists (simulated)
+-  ML detector analyzes each email automatically
+-  Real-time dashboards with metrics
+-  Confidence scores and detection reasons
+- ⏱ Timeline visualization of campaign events
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -49,7 +49,7 @@ npm run dev
 Open http://localhost:5173
 ```
 
-## 💻 Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Framework:** Flask 2.3
@@ -66,7 +66,7 @@ Open http://localhost:5173
 - **Icons:** Lucide React
 - **HTTP Client:** Axios
 
-## 📊 Project Statistics
+##  Project Statistics
 
 | Metric | Value |
 |--------|-------|
@@ -79,7 +79,7 @@ Open http://localhost:5173
 | ML Features | 15 |
 | Development Time | 5 hours |
 
-## 🎯 How It Works
+##  How It Works
 
 ### 1. Create Campaign
 Define a phishing email template with:
@@ -107,7 +107,7 @@ Dashboard shows:
 - "My detector caught 89"
 - "11 emails slipped through"
 
-## 🔍 ML Detector Features
+##  ML Detector Features
 
 The detector analyzes 15 features from each email:
 
@@ -130,34 +130,34 @@ The detector analyzes 15 features from each email:
 **Model:** scikit-learn RandomForest with 100 estimators
 **Accuracy:** ~89-94% on test campaigns
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 phishing-campaign-manager/
-├── backend/
-│   ├── app.py                  # Flask API server
-│   ├── models.py               # Database models
-│   ├── detector.py             # ML detector
-│   └── requirements.txt         # Python dependencies
-├── frontend/
-│   ├── package.json            # npm config
-│   ├── vite.config.js          # Vite config
-│   ├── index.html              # HTML entry
-│   └── src/
-│       ├── App.jsx             # Main app
-│       ├── App.css             # Global styles
-│       ├── index.jsx           # React entry
-│       └── components/
-│           ├── CampaignForm.jsx
-│           ├── CampaignList.jsx
-│           ├── SendCampaign.jsx
-│           ├── DetectionResults.jsx
-│           ├── MetricsDashboard.jsx
-│           └── TimelineView.jsx
-└── README.md
+ backend/
+    app.py                  # Flask API server
+    models.py               # Database models
+    detector.py             # ML detector
+    requirements.txt         # Python dependencies
+ frontend/
+    package.json            # npm config
+    vite.config.js          # Vite config
+    index.html              # HTML entry
+    src/
+        App.jsx             # Main app
+        App.css             # Global styles
+        index.jsx           # React entry
+        components/
+            CampaignForm.jsx
+            CampaignList.jsx
+            SendCampaign.jsx
+            DetectionResults.jsx
+            MetricsDashboard.jsx
+            TimelineView.jsx
+ README.md
 ```
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Purpose |
 |--------|----------|---------|
@@ -171,7 +171,7 @@ phishing-campaign-manager/
 | GET | `/api/dashboard/overview` | Dashboard overview |
 | GET | `/api/events/timeline` | Event timeline |
 
-## 📊 Database Schema
+##  Database Schema
 
 ### Campaign
 - `id` (UUID)
@@ -204,7 +204,7 @@ phishing-campaign-manager/
 - `accuracy`, `precision`, `recall`, `f1_score` (float)
 - Confusion matrix (TP, FP, TN, FN)
 
-## 🎓 Use Cases
+##  Use Cases
 
 ### Security Awareness Training
 Train employees to recognize phishing attacks. Show success rate vs detection rate to measure training effectiveness.
@@ -218,21 +218,21 @@ Evaluate security posture. Compare attack success rate with detection capabiliti
 ### ML Model Development
 Train and evaluate phishing detection models. Test feature engineering approaches.
 
-## ⚠️ Important - Educational Use Only
+##  Important - Educational Use Only
 
 This tool is designed for **authorized security testing only**:
-- ✅ Security awareness training
-- ✅ Penetration testing (with permission)
-- ✅ Red team exercises
-- ✅ ML model development
+-  Security awareness training
+-  Penetration testing (with permission)
+-  Red team exercises
+-  ML model development
 
 **Do NOT use:**
-- ❌ Against systems without explicit written permission
-- ❌ To send real phishing emails to real people
-- ❌ To capture real credentials
-- ❌ For any illegal purpose
+-  Against systems without explicit written permission
+-  To send real phishing emails to real people
+-  To capture real credentials
+-  For any illegal purpose
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 - No real emails sent (simulated only)
 - Credential capture is simulated (no storage)
@@ -240,24 +240,24 @@ This tool is designed for **authorized security testing only**:
 - Use only in controlled environments
 - Comply with all applicable laws and regulations
 
-## 📈 Performance
+##  Performance
 
 - Backend: Flask development server (production: use Gunicorn)
 - Frontend: Vite HMR for fast development
 - Database: SQLite (easily upgrade to PostgreSQL)
 - ML Detector: ~10ms per email
 
-## 🐳 Docker (Optional)
+##  Docker (Optional)
 
 Coming soon: Docker Compose setup for containerized deployment.
 
-## 📚 Documentation
+##  Documentation
 
 - `FRONTEND_BUILD_COMPLETE.md` - Frontend setup guide
 - `PHISHING_CAMPAIGN_QUICK_START.md` - Quick start guide
 - `PROJECT_COMPLETE_FINAL_SUMMARY.md` - Comprehensive overview
 
-## 🤝 Contributing
+##  Contributing
 
 This is an educational project. Contributions welcome for:
 - Better ML models
@@ -265,18 +265,18 @@ This is an educational project. Contributions welcome for:
 - Bug fixes
 - Documentation improvements
 
-## 📄 License
+##  License
 
 MIT License - See LICENSE file for details
 
-## 👤 Author
+##  Author
 
 **Emmanuel Kibet Korir** (Korir555)
 - GitHub: [@Korir555](https://github.com/Korir555)
 - Email: ekorir555@gmail.com
 - Portfolio: [cybersecurity-portfolio](https://korir555.github.io/cybersecurity-portfolio)
 
-## 🎯 Roadmap
+##  Roadmap
 
 - [x] Backend API (Flask)
 - [x] Frontend (React)
@@ -289,16 +289,16 @@ MIT License - See LICENSE file for details
 - [ ] Unit tests
 - [ ] CI/CD pipeline
 
-## 📞 Support
+##  Support
 
 For issues, questions, or suggestions, please open a GitHub issue.
 
 ---
 
-**Built with ❤️ for cybersecurity learning and red team exercises.**
+**Built with  for cybersecurity learning and red team exercises.**
 
 Made with:
-- 🐍 Python
-- ⚛️ React
-- 🤖 Machine Learning
-- 🔒 Security Thinking
+-  Python
+-  React
+-  Machine Learning
+-  Security Thinking
